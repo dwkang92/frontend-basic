@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>week01 | online shopping</title>
+</head>
+<script>
+    $(document).ready(function () {
+        alert('Welcome to my Page!')
+    });
+
+    function order() {
+        let year = prompt('IU는 데뷔 몇주년일까요?', '')
+        alert('정답은 12년입니다');
+        alert('Thanks for your order!')
+    }
+</script>
+<body>
+<div class="box">
+    <div class="story">
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a>
+                            <label for="slide03" class="left"></label>
+                            <img src="./img/slide01.jpg"/>
+                            <label for="slide02" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide01" class="left"></label>
+                            <img src="./img/slide02.JPG"/>
+                            <label for="slide03" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide02" class="left"></label>
+                            <img class="lastimg" src="./img/slide03.jpg"/>
+                            <label for="slide01" class="right"></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item-desc">
+            <h1>IU: 5th Album LILAC <span class="price">Price: 38,600KRW</span></h1>
+        </div>
+        <div class="item-order">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>-- Quantity --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Address</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Phone Number</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <button type="button" onclick="order()" class="btn btn-primary btn-order">purchase</button>
+        </div>
+    </div>
+</body>
+</html>
